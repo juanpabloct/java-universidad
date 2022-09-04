@@ -100,7 +100,7 @@ public class Principal extends javax.swing.JFrame {
                 // Si el usuario es menor de edad
                 if (datosAfiliacion[i][0] <= 18) {
                     int valor_a_pagar = 5000;
-                    datosPersona = datosPersona + arrayStringAfiliado[i] + "\t"
+                    datosPersona = datosPersona + arrayStringAfiliado[i][0] + "\t"
                             + datosAfiliacion[i][0] + "\t" + arrayStringAfiliado[i][1] + "\t" + valor_a_pagar + "\t" +
                             tipoAfiliacion[i][0]
                             + "\n";
@@ -108,7 +108,7 @@ public class Principal extends javax.swing.JFrame {
                     // Si el usuario es mayor de edad y su tipo de afiliacion es ninguna
                     if (tipoAfiliacion[i][0].equals("ninguna") && datosAfiliacion[i][0] > 18) {
                         int valor_a_pagar = 30000;
-                        datosPersona = datosPersona + arrayStringAfiliado[i] + "\t"
+                        datosPersona = datosPersona + arrayStringAfiliado[i][0] + "\t"
                                 + datosAfiliacion[i][0] + "\t" + arrayStringAfiliado[i][1] + "\t" + valor_a_pagar + "\t"
                                 +
                                 tipoAfiliacion[i][0]
@@ -118,7 +118,7 @@ public class Principal extends javax.swing.JFrame {
                     // Si su tipo de afiliacion es a y es mayor de edad
                     else if (tipoAfiliacion[i][0].equals("a") && datosAfiliacion[i][0] > 18) {
                         int valor_a_pagar = 30000 - ((30000 * 15) / 100);
-                        datosPersona = datosPersona + arrayStringAfiliado[i] + "\t"
+                        datosPersona = datosPersona + arrayStringAfiliado[i][0] + "\t"
                                 + datosAfiliacion[i][0] + "\t" + arrayStringAfiliado[i][1] + "\t" + valor_a_pagar + "\t"
                                 +
                                 tipoAfiliacion[i][0]
@@ -127,7 +127,7 @@ public class Principal extends javax.swing.JFrame {
                     // Si su tipo de afiliacion es b y es mayor de edad
                     if (tipoAfiliacion[i][0].equals("b") && datosAfiliacion[i][0] > 18) {
                         int valor_a_pagar = 30000 - ((30000 * 30) / 100);
-                        datosPersona = datosPersona + arrayStringAfiliado[i] + "\t"
+                        datosPersona = datosPersona + arrayStringAfiliado[i][0] + "\t"
                                 + datosAfiliacion[i][0] + "\t" + arrayStringAfiliado[i][1] + "\t" + valor_a_pagar + "\t"
                                 +
                                 tipoAfiliacion[i][0]
@@ -137,7 +137,7 @@ public class Principal extends javax.swing.JFrame {
                     // Si su tipo de afiliacion es c y es mayor de edad
                     if (tipoAfiliacion[i][0].equals("c") && datosAfiliacion[i][0] > 18) {
                         int valor_a_pagar = 30000 - ((30000 * 50) / 100);
-                        datosPersona = datosPersona + arrayStringAfiliado[i] + "\t"
+                        datosPersona = datosPersona + arrayStringAfiliado[i][0] + "\t"
                                 + datosAfiliacion[i][0] + "\t" + arrayStringAfiliado[i][1] + "\t" + valor_a_pagar + "\t"
                                 +
                                 tipoAfiliacion[i][0]
